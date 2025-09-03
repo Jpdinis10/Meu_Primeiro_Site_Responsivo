@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(199, 190, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.13);
+    border: solid 1px rgba(0,0,0,0.13);
+    width: 40vw;
+    text-align: center;
+}
+
+img{
+    margin-top: 30px;
+    width: 30%;
+}
+
+h1{
+    font-size: 20px;
+}
+
+#celular-pequeno {
+    display: none;
+}
+#celular-medio{
+    display: none;
+}
+#tablet{
+    display: none;
+}
+#notebook{
+    display: none;
+}
+#desktop{
+    display: none;
+}
+#monitores-grandes{
+    display: block;
+}
+
+@media (max-width: 480px) {
+    #celular-pequeno {
+        display: block;
+    }
+    #celular-medio{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #notebook{
+        display: none;
+    }
+    #desktop{
+        display: none;
+    }
+    #monitores-grandes{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    #celular-pequeno {
+        display: none;
+    }
+    #celular-medio{
+        display: block;
+    }
+    #tablet{
+        display: none;
+    }
+    #notebook{
+        display: none;
+    }
+    #desktop{
+        display: none;
+    }
+    #monitores-grandes{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #celular-pequeno {
+        display: none;
+    }
+    #celular-medio{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+    #notebook{
+        display: none;
+    }
+    #desktop{
+        display: none;
+    }
+    #monitores-grandes{
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    #celular-pequeno {
+        display: none;
+    }
+    #celular-medio{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #notebook{
+        display: block;
+    }
+    #desktop{
+        display: none;
+    }
+    #monitores-grandes{
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px){
+    #celular-pequeno {
+        display: none;
+    }
+    #celular-medio{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #notebook{
+        display: none;
+    }
+    #desktop{
+        display: block;
+    }
+    #monitores-grandes{
+        display: none;
+    }
+}
+
